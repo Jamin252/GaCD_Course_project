@@ -54,7 +54,12 @@ run_analysis <- function()
     subTest <- read.table("./UCI HAR Dataset/test/subject_test.txt", header= FALSE)
     subjects <- rbind(subTrain, subTest)
     colnames(subjects) <- "subject"
+    
+    #merge the table
     data <- cbind(data,subjects)
+    
+    #step 5, group by and get means
     means <- data %>% group_by(activity,subject) %>% summarise(across(everything(), mean))
     
+    return(means)
 }
