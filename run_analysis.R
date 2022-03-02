@@ -17,8 +17,6 @@ run_analysis <- function()
     featureNames <- tolower(featureNames)
     featureNames <- gsub("\\(\\)", "", featureNames)
     
-    #Adjust feature names
-    
     #Get the training set and testing set
     trainPath <- "./UCI HAR Dataset/train/X_train.txt"
     testPath <- "./UCI HAR Dataset/test/X_test.txt"
