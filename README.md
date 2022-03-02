@@ -21,3 +21,14 @@ Pipeline:
 13. merge the subject data to x and y dataset
 
 14. Group the data by subject and activity and summarize the mean of each column in each group
+
+
+## Variables
+The variables start with "t" is calculated by the body linear acceleration and angular velocity that were derived in time to obtain Jerk signals
+
+The variables start with "b" is calculated by a Fast Fourier Transform (FFT)
+
+mean = mean of the data
+std = standard deviation of the data
+
+The data ends with x / y / z mean represent the 3d direction of the data
